@@ -20,19 +20,19 @@ app.use(express.static(pubdirpath))
 app.get('', (req, res)=>{
     res.render('index', {
         title: 'Weather App',
-        name: 'Someone'
+        name: 'Omkar Chauhan'
     })
 })
 app.get('/about', (req, res)=>{
     res.render('about', {
         title: 'About Me',
-        name: 'Someone'
+        name: 'Omkar Chauhan'
     })
 })
 app.get('/help', (req, res)=>{
     res.render('help', {
         title: 'Help',
-        name: 'Somebody',
+        name: 'Omkar Chauhan',
         msg: 'Some helpful text here'
     })
 })
@@ -75,14 +75,14 @@ app.get('/help/*', (req, res)=>{
     res.render('404',{
         title: '404: Error',
         mesg: 'Help article not found',
-        name: 'Someone'
+        name: 'Omkar Chauhan'
     })
 })
 app.get('*',(req, res)=>{
     res.render('404',{
         title: '404: Error',
         mesg: 'Page not found!',
-        name: 'Someone'
+        name: 'Omkar Chauhan'
     })
 })
 // app.com
